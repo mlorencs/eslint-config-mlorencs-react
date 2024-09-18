@@ -1,10 +1,38 @@
 module.exports = {
     extends: [
+        "eslint:recommended",
+        "plugin:prettier/recommended",
+        "plugin:import/recommended",
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended",
     ],
     rules: {
+        // Configure Prettier
+        "prettier/prettier": [
+            "error",
+            {
+                tabWidth: 4,
+                printWidth: 100,
+            },
+        ],
+
+        "import/order": [
+            "error",
+            {
+                groups: [
+                    "builtin",
+                    "external",
+                    "internal",
+                    "parent",
+                    "sibling",
+                    "index",
+                    "object",
+                    "type",
+                ],
+            },
+        ],
+
         // View link below for React rules documentation
         // https://github.com/jsx-eslint/eslint-plugin-react#list-of-supported-rules
         // Not working: https://github.com/jsx-eslint/eslint-plugin-react/issues/3285

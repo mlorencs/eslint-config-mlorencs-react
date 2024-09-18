@@ -3,9 +3,6 @@
     "version": "0.1.0",
     "description": "Provides my own eslint rules for React as an extensible shared config.",
     "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 0"
-    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/mlorencs/eslint-config-react.git"
@@ -26,7 +23,19 @@
     "homepage": "https://github.com/mlorencs/eslint-config-react#readme",
     "devDependencies": {
         "eslint": "^8.57.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.30.0",
         "eslint-plugin-jsx-a11y": "^6.10.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-react": "^7.36.1",
+        "eslint-plugin-react-hooks": "^4.6.2"
+    },
+    "peerDependencies": {
+        "eslint": "^8.57.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.30.0",
+        "eslint-plugin-jsx-a11y": "^6.10.0",
+        "eslint-plugin-prettier": "^5.2.1",
         "eslint-plugin-react": "^7.36.1",
         "eslint-plugin-react-hooks": "^4.6.2"
     }
