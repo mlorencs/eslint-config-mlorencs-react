@@ -7,6 +7,9 @@ module.exports = {
         "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended",
     ],
+    globals: {
+        React: true,
+    },
     rules: {
         // Configure Prettier
         "prettier/prettier": [
@@ -14,6 +17,7 @@ module.exports = {
             {
                 tabWidth: 4,
                 printWidth: 100,
+                endOfLine: "auto",
             },
         ],
 
