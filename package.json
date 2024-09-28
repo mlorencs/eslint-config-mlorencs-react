@@ -1,6 +1,6 @@
 {
     "name": "@mlorencs/eslint-config-react",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Provides my own eslint rules for React as an extensible shared config.",
     "main": "index.js",
     "repository": {

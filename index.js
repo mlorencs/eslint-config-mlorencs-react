@@ -8,6 +8,8 @@ module.exports = {
         "plugin:jsx-a11y/recommended",
     ],
     globals: {
+        JSX: true,
+        NodeJS: true,
         React: true,
     },
     rules: {
@@ -71,6 +73,7 @@ module.exports = {
         "react/jsx-no-useless-fragment": ["warn"],
         "react/jsx-pascal-case": ["error"],
         "react/no-array-index-key": ["warn"],
+        "react/react-in-jsx-scope": "off",
         "react/self-closing-comp": [
             "error",
             {
